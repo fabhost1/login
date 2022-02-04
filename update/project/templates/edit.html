@@ -1,0 +1,22 @@
+
+<table border="1">
+
+    <tr>
+        <td>name1</td>
+        <td>name2</td>
+    </tr>
+
+   <div>
+       <form action="update{{show.id}}" method="post">
+           {% csrf_token %}
+        <th><input type="text" name='name1' value={{show.name1}}></th>
+        <th><input type="text" name='name2' value={{show.name2}}></th>
+        <th><input type="submit" value="UPDATE"> </th>
+       </form>
+    
+    
+   </div> 
+
+
+</table>
+

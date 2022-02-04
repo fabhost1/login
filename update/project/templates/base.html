@@ -1,0 +1,19 @@
+{% for show in show %}
+<table border="1">
+
+    <tr>
+        <td>name1</td>
+        <td>name2</td>
+    </tr>
+
+   <div>
+    <th><input type="text" value={{show.name1}}></th>
+    <th><input type="text" value={{show.name2}}></th>
+    <th><a href="delete{{show.id}}">DELETE</a></th>
+    <th><a href="edit{{show.id}}">EDIT</a></th>
+   </div> 
+
+
+</table>
+
+{% endfor %}
